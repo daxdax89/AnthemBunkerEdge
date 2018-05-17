@@ -35,21 +35,186 @@
         </div>
     </section>
     <section style="background-color:#fafafa;">
-        <div style="text-align:center;padding-top:10px;padding-bottom:10px;"><span style="font-style:italic;color:#a2a6af;">As featured in...</span></div>
-    </section><div>
-    <h1 class="text-center text-h1 margin-bot">Partners </h1></div>
-
-<div class="customer-logos">
-  <div class="slide"><img style="margin-top:1.5em;" src="assets/Logos/aol.png"></div>
-  <div class="slide"><img style="margin-top:1.3em;" src="emc.png"></div>
-  <div class="slide"><img src="equinix.png"></div>
-  <div class="slide"><img style="margin-top:2em;" src="microsoft.png"></div>
-  <div class="slide"><img style="margin-top:2em;" src="nutanix.png"></div>
-  <div class="slide"><img style="margin-top:1.4em;"src="simplivity.png"></div>
-  <div class="slide"><img style="margin-top:2em;"src="vmware.png"></div>
+        <div style="text-align:center;padding-top:10px;padding-bottom:10px;"><span style="font-style:italic;color:#a2a6af;">As featured in...</span></div><div class="customer-logos" style="background-color:#fafafa;padding-top:5%;padding-bottom:5%;">
+  <div class="slide"><img src="assets/img/Logos/aol.png"></div>
+  <div class="slide"><img src="assets/img/Logos/bing.png"></div>
+  <div class="slide"><img src="assets/img/Logos/bloomberg-businessweek.png"></div>
+  <div class="slide"><img src="assets/img/Logos/bloomberg-tv.png"></div>
+  <div class="slide"><img src="assets/img/Logos/bloomberg-view.png"></div>
+  <div class="slide"><img src="assets/img/Logos/bloomberg.png"></div>
+  <div class="slide"><img src="assets/img/Logos/bswann.png"></div>
+  <div class="slide"><img src="assets/img/Logos/business-report.png"></div>
+     <div class="slide"><img src="assets/img/Logos/cnbc.png"></div>
+     <div class="slide"><img src="assets/img/Logos/drdave.png"></div>
+     <div class="slide"><img src="assets/img/Logos/fast-markets.png"></div>
+    <div class="slide"><img src="assets/img/Logos/fox.png"></div>
+    <div class="slide"><img src="assets/img/Logos/google.png"></div>
+    <div class="slide"><img src="assets/img/Logos/ibt.png"></div>
+    <div class="slide"><img src="assets/img/Logos/jaytaylor.png"></div>
+    <div class="slide"><img src="assets/img/Logos/market-watch.png"></div>
+    <div class="slide"><img src="assets/img/Logos/msn.png"></div>
+    <div class="slide"><img src="assets/img/Logos/reuters.png"></div>
+    <div class="slide"><img src="assets/img/Logos/sina.png"></div>
+        <div class="slide"><img src="assets/img/Logos/thestreet.png"></div>
+    <div class="slide"><img src="assets/img/Logos/usnews.png"></div>
+    <div class="slide"><img src="assets/img/Logos/wrko.png"></div>
+    <div class="slide"><img src="assets/img/Logos/wsj.png"></div>
+    <div class="slide"><img src="assets/img/Logos/yahoo.png"></div>
 </div>
-				
+<style>
+/* Slider */
+.slick-slide {
+    margin: 0px 20px;
+}
 
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+</style>
+
+                <script type="text/javascript">
+$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
+</script>
+
+				</section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
