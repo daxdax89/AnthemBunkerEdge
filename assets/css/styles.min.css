@@ -6,3 +6,16 @@ nav{
 .logoBre{
 	width: 50%;
 }
+
+body{
+	background-color: #fafafa;
+}
+
+.regBtn:hover{
+	background-color: #df8c06 !important;
+}
+
+.sgnUpBtn:hover{
+color: white !important;
+background-color: #f9a825 !important;
+}
