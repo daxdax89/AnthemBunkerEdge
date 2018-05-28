@@ -19,3 +19,7 @@ body{
 color: white !important;
 background-color: #f9a825 !important;
 }
+
+.nav-link:hover{
+color: #f9a825 !important;
+}
